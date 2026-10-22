@@ -1133,8 +1133,8 @@ async function initTerminalDemo() {
         <div class="hero-eyebrow">WEBERNETES DEMO</div>
         <h2 id="hero-title">AGENT<br />RUNTIME</h2>
         <p>
-          Edera is the secure execution platform for all software. Built so every
-          untrusted workload runs trusted, and free to move at the speed of your business.
+          Edera allows you to give an AI agent limited capabilities such as scoped
+          permissions to external services, within our secure container and agent sandbox.
         </p>
         <button id="hero-run-btn" class="hero-cta" type="button">Jump to Terminal</button>
       </section>
