@@ -594,6 +594,35 @@ input {
   white-space: pre;
 }
 
+/* Syntax highlighting for `cat` (highlight.js tokens), GitHub Dark palette. */
+.terminal-pre .hljs { color: #e6edf3; }
+.terminal-pre .hljs-keyword,
+.terminal-pre .hljs-meta .hljs-keyword,
+.terminal-pre .hljs-template-tag,
+.terminal-pre .hljs-type.hljs-keyword { color: #ff7b72; }
+.terminal-pre .hljs-title,
+.terminal-pre .hljs-title.function_,
+.terminal-pre .hljs-title.class_ { color: #d2a8ff; }
+.terminal-pre .hljs-string,
+.terminal-pre .hljs-regexp,
+.terminal-pre .hljs-meta .hljs-string { color: #a5d6ff; }
+.terminal-pre .hljs-number,
+.terminal-pre .hljs-literal,
+.terminal-pre .hljs-built_in,
+.terminal-pre .hljs-attr,
+.terminal-pre .hljs-attribute,
+.terminal-pre .hljs-variable,
+.terminal-pre .hljs-symbol,
+.terminal-pre .hljs-selector-attr { color: #79c0ff; }
+.terminal-pre .hljs-type,
+.terminal-pre .hljs-params,
+.terminal-pre .hljs-section,
+.terminal-pre .hljs-meta { color: #ffa657; }
+.terminal-pre .hljs-comment,
+.terminal-pre .hljs-quote { color: #8b949e; font-style: italic; }
+.terminal-pre .hljs-subst { color: #e6edf3; }
+.terminal-pre .hljs-bullet { color: #f2cc60; }
+
 .terminal-input-row {
   display: flex;
   align-items: center;
