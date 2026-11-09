@@ -1,0 +1,29 @@
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# CSP is Report-Only until the GTM container's tags and the inline styles in
+# main.ts have been checked against real reports. The script hash covers the
+# inline GTM bootstrap in index.html; it changes if that snippet changes.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy-Report-Only = """
+      default-src 'self';
+      script-src 'self' 'sha256-JpUfvIX3jLMCyHhSvbznilug/oElxtRPW5sw4yOHi0c=' https://www.googletagmanager.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src https://fonts.gstatic.com;
+      img-src 'self' data: https://docs.edera.dev https://www.googletagmanager.com https://*.google-analytics.com;
+      connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com;
+      frame-src https://www.googletagmanager.com;
+      frame-ancestors 'none';
+      base-uri 'self';
+      form-action 'self';
+      object-src 'none'"""
