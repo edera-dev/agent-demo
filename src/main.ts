@@ -1960,7 +1960,7 @@ async function initTerminalDemo() {
         style="display:flex;justify-content:center;margin:32px 0 8px;"
       >
         <a
-          href="https://ndouglas-edera.github.io/ctf-challenge-1/"
+          href="https://edera-dev.github.io/ctf-challenge-1/"
           target="_blank"
           rel="noopener noreferrer"
           style="display:inline-block;padding:14px 30px;border-radius:999px;background:#b8ff3c;color:#081716;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 10px 30px rgba(184,255,60,.25);"
