@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ngrok/webernetes": "^0.1.0",
+    "@ngrok/webernetes": "^0.6.1",
     "highlight.js": "11.11.1"
   },
   "devDependencies": {
